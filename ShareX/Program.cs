@@ -44,7 +44,7 @@ namespace ShareX
 {
     internal static class Program
     {
-        public const string Name = "ShareX";
+        public const string Name = "ShareX Offline";
 
         public const ShareXBuild Build =
 #if RELEASE
