@@ -368,6 +368,7 @@
     <Compile Include="TaskListView.cs" />
     <Compile Include="TaskManager.cs" />
     <Compile Include="TaskSettings.cs" />
+    <Compile Include="UploadingDisabledException.cs" />
     <Compile Include="UploadInfoParser.cs" />
     <Compile Include="UploadInfoStatus.cs" />
     <Compile Include="Forms\HotkeySettingsForm.cs">
