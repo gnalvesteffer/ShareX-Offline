@@ -27,8 +27,8 @@ namespace ShareX.HelpersLib
 {
     public static class Links
     {
-        public const string Website = "https://getsharex.com";
-        public const string GitHub = "https://github.com/ShareX/ShareX";
+        public const string Website = "https://github.com/gnalvesteffer/ShareX-Offline";
+        public const string GitHub = "https://github.com/gnalvesteffer/ShareX-Offline";
         public const string GitHubIssues = GitHub + "/issues?q=is%3Aissue";
         public const string Callback = Website + "/callback/";
         public const string Changelog = Website + "/changelog";
@@ -36,6 +36,7 @@ namespace ShareX.HelpersLib
         public const string PrivacyPolicy = Website + "/privacy-policy";
         public const string ImageEffects = Website + "/image-effects";
         public const string Actions = Website + "/actions";
+        public const string Gnalvesteffer = "https://github.com/gnalvesteffer";
         public const string Jaex = "https://github.com/Jaex";
         public const string McoreD = "https://github.com/McoreD";
         public const string Steam = "http://store.steampowered.com/app/400040/";

@@ -66,9 +66,14 @@ namespace ShareX
             rtbInfo.AppendLine(Resources.AboutForm_AboutForm_Links, FontStyle.Bold, 13);
             rtbInfo.AppendLine($@"{Resources.AboutForm_AboutForm_Website}: {Links.Website}
 {Resources.AboutForm_AboutForm_Project_page}: {Links.GitHub}
-{Resources.AboutForm_AboutForm_Changelog}: {Links.Changelog}
-{Resources.AboutForm_AboutForm_Privacy_policy}: {Links.PrivacyPolicy}
 ", FontStyle.Regular);
+
+            rtbInfo.AppendLine("Offline Fork", FontStyle.Bold, 13);
+            rtbInfo.AppendLine($"Gavin Alvesteffer: {Links.Gnalvesteffer}");
+            rtbInfo.AppendLine();
+
+            rtbInfo.AppendLine("Original ShareX About Section Retained Below:", FontStyle.Underline | FontStyle.Bold | FontStyle.Italic, 16);
+            rtbInfo.AppendLine();
 
             rtbInfo.AppendLine(Resources.AboutForm_AboutForm_Team, FontStyle.Bold, 13);
             rtbInfo.AppendLine($@"Jaex: {Links.Jaex}
@@ -114,7 +119,7 @@ Inno Setup Dependency Installer: https://github.com/DomGries/InnoDependencyInsta
 Blob Emoji: http://blobs.gg
 ", FontStyle.Regular);
 
-            rtbInfo.AppendText("Copyright (c) 2007-2022 ShareX Team", FontStyle.Bold, 13);
+            rtbInfo.AppendText("Copyright (c) 2007-2022 ShareX Team (fork by gnalvesteffer)", FontStyle.Bold, 13);
 
             easterEgg = new EasterEggAboutAnimation(cLogo, this);
         }

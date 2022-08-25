@@ -354,7 +354,7 @@ namespace ShareX
             SettingManager.LoadInitialSettings();
 
             Uploader.UpdateServicePointManager();
-            UpdateManager = new GitHubUpdateManager("ShareX", "ShareX", Dev, Portable);
+            UpdateManager = new GitHubUpdateManager("gnalvesteffer", "ShareX-Offline", Dev, Portable);
             LanguageHelper.ChangeLanguage(Settings.Language);
             CleanupManager.CleanupAsync();
             Helpers.TryFixHandCursor();
