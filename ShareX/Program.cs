@@ -250,7 +250,7 @@ namespace ShareX
             }
         }
 
-        public static string ToolsFolder => Path.Combine(PersonalFolder, "Tools");
+        public static string ToolsFolder => Path.Combine("Tools");
         public static string ImageEffectsFolder => Path.Combine(PersonalFolder, "ImageEffects");
         public static string ScreenRecorderCacheFilePath => Path.Combine(PersonalFolder, "ScreenRecorder.avi");
         public static string DefaultFFmpegFilePath => Path.Combine(ToolsFolder, "ffmpeg.exe");
