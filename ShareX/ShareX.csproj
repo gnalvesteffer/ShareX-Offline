@@ -96,6 +96,16 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'ReleaseAndZip|AnyCPU'">
+    <OutputPath>bin\ReleaseAndZip\</OutputPath>
+    <DefineConstants>TRACE;RELEASE</DefineConstants>
+    <Optimize>true</Optimize>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <LangVersion>7.3</LangVersion>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -2150,7 +2160,9 @@
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <PostBuildEvent>
-    </PostBuildEvent>
+      if $(ConfigurationName) == ReleaseAndZip (powershell Copy-Item -Path '$(ProjectDir)$(OutDir)' -Destination '$(ProjectDir)bin\ShareX-Offline\' -Recurse)
+      if $(ConfigurationName) == ReleaseAndZip (powershell Compress-Archive -Path '$(ProjectDir)bin\ShareX-Offline' -DestinationPath '$(ProjectDir)bin\ShareX-Offline.zip' -Force)
+</PostBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
     <PreBuildEvent>
