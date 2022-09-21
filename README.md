@@ -1,3 +1,11 @@
+# ShareX Offline
+
+This fork (ShareX-Offline) aims to remove upload-related operations entirely, primarily for environments where uploading media is prohibited, and relying on settings to disable this is considered too risky.
+
+----
+
+**Original ShareX README preserved below**
+
 # ShareX
 
 [![Build status](https://img.shields.io/appveyor/build/ShareX/ShareX?label=Build&cacheSeconds=3600)](https://ci.appveyor.com/project/ShareX/sharex)
