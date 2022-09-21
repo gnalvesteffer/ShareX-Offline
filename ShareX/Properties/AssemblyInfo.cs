@@ -26,6 +26,6 @@
 using System.Reflection;
 using System.Runtime.InteropServices;
 
-[assembly: AssemblyTitle("ShareX")]
+[assembly: AssemblyTitle("ShareX Offline")]
 [assembly: AssemblyDescription("Screen capture, file sharing and productivity tool")]
-[assembly: Guid("82E6AC09-0FEF-4390-AD9F-0DD3F5561EFC")]
+[assembly: Guid("d38691fd-f438-4a64-ba67-38bdd6476ac0")]
