@@ -1739,9 +1739,9 @@
             this.tsmiTrayUploadDragDrop,
             this.tsmiTrayShortenURL,
             this.tsmiTrayTweetMessage});
+            resources.ApplyResources(this.tsmiTrayUpload, "tsmiTrayUpload");
             this.tsmiTrayUpload.Image = global::ShareX.Properties.Resources.arrow_090;
             this.tsmiTrayUpload.Name = "tsmiTrayUpload";
-            resources.ApplyResources(this.tsmiTrayUpload, "tsmiTrayUpload");
             // 
             // tsmiTrayUploadFile
             // 
@@ -2017,9 +2017,9 @@
             // 
             // tsmiTrayAfterUploadTasks
             // 
+            resources.ApplyResources(this.tsmiTrayAfterUploadTasks, "tsmiTrayAfterUploadTasks");
             this.tsmiTrayAfterUploadTasks.Image = global::ShareX.Properties.Resources.upload_cloud;
             this.tsmiTrayAfterUploadTasks.Name = "tsmiTrayAfterUploadTasks";
-            resources.ApplyResources(this.tsmiTrayAfterUploadTasks, "tsmiTrayAfterUploadTasks");
             // 
             // tsmiTrayDestinations
             // 
@@ -2032,9 +2032,9 @@
             this.tssTrayDestinations1,
             this.tsmiTrayDestinationSettings,
             this.tsmiTrayCustomUploaderSettings});
+            resources.ApplyResources(this.tsmiTrayDestinations, "tsmiTrayDestinations");
             this.tsmiTrayDestinations.Image = global::ShareX.Properties.Resources.drive_globe;
             this.tsmiTrayDestinations.Name = "tsmiTrayDestinations";
-            resources.ApplyResources(this.tsmiTrayDestinations, "tsmiTrayDestinations");
             this.tsmiTrayDestinations.DropDownOpened += new System.EventHandler(this.tsddbDestinations_DropDownOpened);
             // 
             // tsmiTrayImageUploaders
